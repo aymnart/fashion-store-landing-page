@@ -31,7 +31,7 @@
 	border: dashed 0.15em transparent;
     animation: autoRun var(--time) linear infinite;
     transition: filter 1s ;
-    animation-delay: calc( (var(--time) / var(--quantity)) * (var(--position) - 1) )!important;
+    animation-delay: calc( (var(--time) / var(--quantity)) * (var(--position) - 1) - var(--time))!important;
 }
 .slider .list .item >*{
     width: 100%;
